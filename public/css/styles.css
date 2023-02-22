@@ -1,0 +1,459 @@
+/* --- GENERALES --- */
+:root {
+    --amarillo: #EAC926;
+	--azul: #03264C;
+    --celeste: #1259c3;
+    --grisoscuro: #666;
+    --grisclaro: #ebebeb;
+    --verde: #39b54a;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    background-color:var(--amarillo);
+}
+
+
+/* ---- HEADER - TOP ---- */
+
+.logo-busqueda{
+    display: flex;
+    width: 100%;
+}
+
+.logo{
+     width: 50vw;
+    padding: 30px 10px 10px 5px;
+}
+
+.barra-de-busquedas {
+    margin: auto;
+    margin-top: 8%;
+    margin-left: 0;
+    width: 100vw;
+}
+.logo-busqueda input, .logo-busqueda i{
+    padding: 5px;
+    width: 80%;
+
+}
+.compra-en-cuotas {
+    text-align: center;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    font-size: 16px;
+}
+.example input , .example button{
+    border: none;
+}
+/* -- PARA METER LA LUPA DENTRO DE LA SEARCH BAR, PERO LO TENGO DESACTIVADO PORQUE ME HACE FUNCIONAR RARO EL RESPONSIVE */
+
+/* .barra-de-busquedas{
+    position: relative;
+}
+.fa-search{
+    position: absolute;
+    top: 3px;
+    right: -15%;
+    width: 20px;
+} */
+
+/* --- HEADER - BOTTOM  --- */
+
+.primer-nav {
+    display: none;
+}
+.primer-nav ul{
+    display: flex;
+}
+.primer-nav li{
+    list-style-type: none;
+    font-size: 13px;
+    /* display: flex; */
+    justify-content: space-around;
+}
+
+.primer-nav li a{
+    text-decoration: none;
+    color: black
+}
+
+.header-abajo {
+    display: flex;
+}
+
+.burger-menu {
+    background-color: var(--celeste);
+    padding: 8px 14px;
+    color: white;
+    margin: auto;
+    border-radius: 7px;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    
+}
+.publicidad-separador {
+    width: 100%;
+}
+
+/* --- -------- --- */
+/* ----- MAIN ----- */
+
+.titular {
+    justify-content: center;
+    font-weight: 600;
+}
+main {
+    background: var(--grisclaro);
+    display: flex;
+    justify-content: center;
+    padding: 20px;    
+
+}
+
+main img {
+    margin-top: 10px;
+    max-width: 90vw;  
+}
+
+.art1, .art2, .art3, .art4 {
+    border: 1px solid #ebebeb;
+    padding: 15px;
+    background: white;
+    margin-top: 10px;
+    position: relative; 
+}
+
+.art1 img, .art2 img, .art3 img, .art4 img{
+    width: 100%;
+    box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.1);
+}
+
+.oferta {
+    color: var(--verde);
+    padding-left: 10%;
+    width: 69%;
+}
+
+.precio { 
+    width: 28%;
+}
+
+.descripcion {
+    display: none;
+    padding-bottom: 15px;
+}
+.art1:hover .descripcion {
+    display: block;
+}
+.art2:hover .descripcion {
+    display: block;
+}
+.art3:hover .descripcion {
+    display: block;
+}
+.art4:hover .descripcion {
+    display: block;
+}
+
+.oferta-precio{
+    display: flex;
+    margin: auto;
+    padding: 15px 0 15px 0 ;
+}
+
+.camionetita {
+    border: 1px solid var(--verde);
+    border-radius: 50%;
+    display: inline-block;
+    color: var(--verde);
+    padding: 5px;
+    position: absolute;
+    right: 28px;
+    bottom: 40px;
+    z-index: 100;
+    transition: transform 0.2s ease-in-out;
+} 
+.camionetita:hover {
+    transform: rotateZ(-90deg); 
+} 
+/* --- -------- --- */
+/* ---- FOOTER ---- */
+
+section .titular {
+    font-size: 24px;
+}
+section .precio {
+    font-size: 18px;
+}
+section .descripcion {
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    border: var(--grisclaro) 9px solid;
+}
+footer i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--celeste)
+}
+footer:hover i{
+    color: crimson;
+}
+.footer-titulos {
+    font-weight: 800;
+    font-size: 18px;
+    
+}
+footer section {
+    margin-bottom: 50px;
+    font-size: 12px;
+}
+
+/* ------------------------- --- */
+/* -- FORM REGISTER REGISTRATE --*/
+
+.form-register {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contro-formulario{
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.control{
+    padding: 8px;
+    border: none;
+    width: 100%;
+
+}
+
+.botones button{
+    padding: 8px;
+    border-radius: 5px;
+    background-color: var(--celeste);
+    color: #ebebeb;
+    font-size: 16px;
+
+}
+.botones-login:hover button{
+    background-color: #0022AA;
+}
+.label-to-hide{
+    display: none;
+    margin-bottom: 10px;
+
+}
+.margen{
+    margin-bottom: 10px;
+    display: flex;
+}
+
+/* ----------------- */
+/* -- FORM LOGIN --*/
+
+.form-register-login{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+.contro-formulario-login{
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+}
+.control-login{
+    padding: 8px;
+    border: none;
+    width: 100%;
+}
+.botones-login button{
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #1259c3;
+    color: #ebebeb;
+    font-size: 16px;
+     width: 100%; 
+    
+}
+
+ .botones-login{
+    width: 100%;
+} 
+.art1:hover, .art2:hover, .art3:hover, .art4:hover{
+    box-shadow: 0px 0px 3px rgb(100, 100, 100);
+}
+
+/* ------------------------- --- */
+/* --- MEDIA QUERYS --- */
+
+@media (min-width: 557px) {
+
+/* ---- HEADER - TOP ---- */
+.top-header {
+    width: 100%;
+    display: flex;
+    padding-top: 15px;
+}
+
+.logo{
+    width: 103%; 
+    /* padding: 30px 10px 10px 20px; */
+
+}
+
+.barra-de-busquedas {
+    margin: auto;
+    margin-top: 40px;
+    width: 85%;
+    
+}
+
+.compra-en-cuotas {
+    margin-top: 40px ;
+    text-align: right; 
+    margin-right: 9px; 
+    width: 75%;
+    font-size: 12px;
+
+}
+
+/* ---- HEADER - BOTTOM ---- */
+.burger-menu {
+    display: none;
+}
+
+.primer-nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    padding-top: 40px;
+    
+}
+.primer-nav ul{
+    display: flex;
+    justify-content: space-between; 
+}
+.primer-nav li{
+    margin: 6px;
+    font-size: 13px;
+}
+.primer-nav ul li a{
+    justify-content: space-between;
+}
+/* -- MAIN -- */
+    .titular{
+        padding-bottom: 20px;
+    }
+     .descripcion {
+        display: flex;
+    }
+ 
+
+    .art1, .art2, .art3, .art4  {
+/*      box-shadow: 0px 0px 3px rgb(100, 100, 100); */
+        display: inline-block;
+        width: 35%;
+        margin-left: 10%
+    }
+
+    .camionetita{
+        bottom: 85px;
+        right: 16px;
+    }
+    .oferta{
+        margin-left: 30px;
+    }
+    
+    /* FORM */
+    .contro-formulario{
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 660px){
+    .primer-nav li{
+        margin: 7px;
+        font-size: 15px;
+    }
+    .compra-en-cuotas {
+        margin-top: 40px ;
+        text-align: right; 
+        margin-right: 10px; 
+        width: 75%;
+        font-size: 14px;
+    
+    }
+    .form-register input{
+        font-size: 15px;
+   }
+
+}
+
+
+@media (min-width: 768px) {
+
+    .label-to-hide{
+        display: flex;
+    
+    }
+/* --- MAIN --- */
+    .art1, .art2, .art3, .art4{
+        width: 21%;
+        margin-left: 3%;
+
+    }
+    .oferta{
+        margin-left: 30px;
+    }
+    .compra-en-cuotas{
+        font-size: 16px;
+    }
+    .primer-nav li{
+        margin: 8px;
+        font-size: 16px;
+    }
+    section .descripcion {
+        font-size: 13px;
+    }
+    .oferta {
+        font-size: 13px;
+    }
+    section .precio {
+        font-size: 16px;
+    }
+    header{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /* FOOTER */
+    footer{
+        display: flex;
+
+    }
+    .footer-titulos-texto{
+        font-size: 14px;
+        padding: 5px 25px 0 25px;
+    }
+
+}
